@@ -15,6 +15,16 @@
   <%= @pet.birthdate %>
 </p>
 
+<p>
+  <strong>Weights:</strong>
+  <%= @pet.pet_histories.pluck(:weight).join(' - ') %>
+</p>
+
+<p>
+  <strong>Heights:</strong>
+  <%= @pet.pet_histories.pluck(:heigth).join(' - ') %>
+</p>
+
 
 <table>
   <thead>
